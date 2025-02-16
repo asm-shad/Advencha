@@ -1,4 +1,7 @@
+import Link from "next/link";
 import React from "react";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -77,7 +80,25 @@ const Footer = () => {
             </h1>
           </div>
         </div>
-        {/* Bottom Section */}
+      </div>
+      {/* Bottom Section */}
+      <div className="mt-8 w-[80%] mx-auto border-t pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+        <p className="text-center md:text-left">
+          &copy; {new Date().getFullYear()} Advencha ASMShad. All rights
+          reserved.
+        </p>
+        <div className="flex items-center space-x-4 mt-4 md:mt-0">
+          <span>Social: </span>
+          <Link href="#" className="text-gray-500 hover:text-gray-800">
+            <FaTwitter></FaTwitter>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-gray-800">
+            <FaFacebook></FaFacebook>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-gray-800">
+            <FaGithub></FaGithub>
+          </Link>
+        </div>
       </div>
     </div>
   );
