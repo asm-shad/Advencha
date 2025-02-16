@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Rancho } from "next/font/google"; // Add Rancho here
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import Footer from "@/components/Home/Footer/Footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className={`${poppins.className}  antialiased`}>
         <ResponsiveNav></ResponsiveNav>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
