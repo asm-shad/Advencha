@@ -5,8 +5,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { LiaTripadvisor } from "react-icons/lia";
-import { TbAirBalloon } from "react-icons/tb";
-
 type Props = {
   openNav: () => void;
 };
@@ -26,17 +24,18 @@ const Nav = ({ openNav }: Props) => {
   return (
     <div
       className={`${
-        navBg ? "bg-blue-950 shadow-md" : "fixed"
+        navBg
+          ? "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 shadow-md"
+          : "fixed"
       } transition-all duration-200 h-[8vh] z-[1000] fixed w-full`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* Logo  */}
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center flex-col">
-            {/* <TbAirBalloon className="w-6 h-6 text-white"></TbAirBalloon> */}
+          <div className="w-10 h-10 bg-gradient-to-br from-pink-400 via-red-600 to-purple-700 rounded-full flex items-center justify-center flex-col">
             <LiaTripadvisor className="w-6 h-6 text-white"></LiaTripadvisor>
           </div>
-          <h1 className="text-xl md:text-2xl text-white uppercase font-bold rancho-font">
+          <h1 className="text-xl md:text-2xl bg-gradient-to-r from-blue-950 via-blue-700 to-blue-600 bg-clip-text text-transparent uppercase font-bold rancho-font">
             Advencha
           </h1>
         </div>
@@ -54,7 +53,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         {/* Button  */}
         <div className="flex items-center space-x-4">
-          <button className="md:px-12 md:py-2.5 px-8 py-2 text-black text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
+          <button className="md:px-12 md:py-2.5 px-8 py-2 text-white text-base bg-gradient-to-br from-pink-400 via-red-600 to-purple-700 transition-all duration-200 rounded-lg hover:ring-2 hover:ring-offset-2 hover:ring-rose-600 ease-out">
             Book Now
           </button>
           {/* Burger Menu  */}

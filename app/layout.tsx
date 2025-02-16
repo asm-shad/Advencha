@@ -10,6 +10,7 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const rancho = Rancho({
   weight: ["400"], // Rancho typically has only one weight
   subsets: ["latin"],
