@@ -14,7 +14,12 @@ const Hotel = () => {
         {/* Hotel Card  */}
         {hotelsData.map((data, idx) => {
           return (
-            <div key={idx}>
+            <div
+              key={idx}
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay={`${idx * 100}`}
+            >
               <HotelCard hotel={data}></HotelCard>
             </div>
           );
