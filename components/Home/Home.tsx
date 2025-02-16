@@ -3,6 +3,7 @@ import Hero from "./Hero.tsx/Hero";
 import Destination from "./Destination/Destination";
 import Hotel from "./Hotel/Hotel";
 import WhyChoose from "./WhyChoose/WhyChoose";
+import Reviews from "./Reviews/Reviews";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Destination></Destination>
       <Hotel></Hotel>
       <WhyChoose></WhyChoose>
+      <Reviews></Reviews>
     </div>
   );
 };
