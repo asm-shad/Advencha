@@ -28,7 +28,7 @@ const WhyChoose = () => {
         <div>
           <WhyChooseCard
             image="/images/c3.svg"
-            title="Customer Care Service 24/7"
+            title="Customer Service 24/7"
             para="We're here for you anytime, anywhere. Our dedicated support team is available 24/7 to assist with any queries, ensuring a stress-free travel experience."
           ></WhyChooseCard>
         </div>
