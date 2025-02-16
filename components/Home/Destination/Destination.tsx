@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../Helper/SectionHeading";
+import SectionHeading from "../../Helper/SectionHeading";
 import DestinationSlider from "./DestinationSlider";
 
 const Destination = () => {
@@ -11,9 +11,8 @@ const Destination = () => {
       ></SectionHeading>
       {/* Section Content  */}
       <div className="mt-14 w-[80%] mx-auto">
-      {/* Slider  */}
-      <DestinationSlider></DestinationSlider>
-      
+        {/* Slider  */}
+        <DestinationSlider></DestinationSlider>
       </div>
     </div>
   );
